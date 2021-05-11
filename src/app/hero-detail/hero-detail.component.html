@@ -2,8 +2,20 @@
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
   <div>
-    <label for="hero-name">Full name: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+    <label for="member-name">Full name: </label>
+    <input id="member-name" [(ngModel)]="hero.name" placeholder="Member name"/>
+  </div>
+  <div>
+    <label for="member-age">Age: </label>
+    <input id="member-age" [(ngModel)]="hero.age" placeholder="Member age"/>
+  </div>
+  <div>
+    <label for="member-gender">Gender: </label>
+    <input id="member-gender" [(ngModel)]="hero.gender" placeholder="Member Gender"/>
+  </div>
+  <div>
+    <label for="member-mobile">Mobile Number: </label>
+    <input id="member-mobile" [(ngModel)]="hero.mobile" placeholder="Member Mobile Number"/>
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
