@@ -1,9 +1,11 @@
 /* HeroDetailComponent's private CSS styles */
 label {
+  display: table-cell;
   color: #435960;
   font-weight: bold;
 }
 input {
+  display: table-cell;
   font-size: 1em;
   padding: .5rem;
 }
@@ -22,3 +24,5 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 }
+.detail-container {display: table;}
+.detail-cell {display: table-row;}
