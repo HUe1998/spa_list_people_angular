@@ -1,11 +1,25 @@
 <h2>Join Member</h2>
 
 <div>
-  <label for="new-hero">Member name: </label>
-  <input id="new-hero" #heroName />
+  <label for="new-member-name">Member name: </label>
+  <input id="new-member-name" #heroName />
+  <label for="new-member-age">Member Age: </label>
+  <input id="new-member-age" #heroAge />
+  <label for="new-member-gender">Member Gender: </label>
+  <input id="new-member-gender" #heroGender />
+  <label for="new-member-mobile">Member Mobile Number: </label>
+  <input id="new-member-mobile" #heroMobile />
+
 
   <!-- (click) passes input value to add() and then clears the input -->
-  <button class="add-button" (click)="add(heroName.value); heroName.value=''">
+  <button class="add-button" (click)="add(heroName.value,
+                                          heroAge.value*1,
+                                          heroGender.value,
+                                          heroMobile.value*1);
+                                      heroName.value='';
+                                      heroAge.value='';
+                                      heroGender.value='';
+                                      heroMobile.value='' ">
     Add Member
   </button>
 </div>
